@@ -1,5 +1,6 @@
 package delta.testmod;
 
+import delta.testmod.block.ModBlocks;
 import delta.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
