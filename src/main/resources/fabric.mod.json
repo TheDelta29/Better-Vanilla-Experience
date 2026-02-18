@@ -1,32 +1,33 @@
 {
 	"schemaVersion": 1,
-	"id": "testmod",
+	"id": "bettervanillaexperience",
 	"version": "${version}",
-	"name": "TestMod",
-	"description": "Test Mod",
+	"name": "Better Vanilla Experience",
+	"description": "Better Vanilla Experience",
 	"authors": [
-		"Delta"
+		"Delta",
+		"Uwutoe"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/TheDelta29/fabric-test-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/testmod/icon.png",
+	"icon": "assets/bettervanillaexperience/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"delta.testmod.TestMod"
+			"delta.bettervanillaexperience.BetterVanillaExperience"
 		],
 		"fabric-datagen": [
-			"delta.testmod.TestModDataGenerator"
+			"delta.bettervanillaexperience.TestModDataGenerator"
 		],
 		"client": [
-			"delta.testmod.TestModClient"
+			"delta.bettervanillaexperience.TestModClient"
 		]
 	},
 	"mixins": [
-		"testmod.mixins.json"
+		"bettervanillaexperience.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",
