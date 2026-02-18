@@ -26,6 +26,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3f,3f)
                     .requiresTool()));
 
+    public static final Block RAW_ENDISITE_BLOCK = registerBlock("raw_endisite_block",
+            new Block(AbstractBlock.Settings.create().strength(3f,3f)
+                    .requiresTool()));
+
     public static final Block ENDISITE_BLOCK = registerBlock("endisite_block",
             new Block(AbstractBlock.Settings.create().strength(3f,3f)
                     .requiresTool()));
@@ -48,6 +52,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.ENDISITE_ORE_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.ENDISITE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.RAW_ENDISITE_BLOCK);
         });
     }
 
