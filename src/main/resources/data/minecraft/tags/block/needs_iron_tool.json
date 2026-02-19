@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bettervanillaexperience:pink_garnet_ore",
+    "bettervanillaexperience:pink_garnet_block",
+    "bettervanillaexperience:raw_pink_garnet_block",
+
+    "bettervanillaexperience:raw_endisite_block"
+  ]
+}

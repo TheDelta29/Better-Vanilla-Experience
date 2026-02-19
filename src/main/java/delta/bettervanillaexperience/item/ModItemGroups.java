@@ -35,9 +35,12 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                         entries.add(ModBlocks.ENDISITE_ORE_BLOCK);
                         entries.add(ModBlocks.ENDISITE_BLOCK);
                         entries.add(ModBlocks.RAW_ENDISITE_BLOCK);
+
                     })
                     .build()
     );
