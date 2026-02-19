@@ -43,5 +43,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_JADE_BLOCK)
                 .add(ModBlocks.ENDISITE_ORE_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.PINK_GARNET_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PINK_GARNET_WALL);
+
+
+
+
     }
 }
