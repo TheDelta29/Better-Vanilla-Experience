@@ -48,6 +48,19 @@ public class ModItemGroups {
                     .build()
     );
 
+    public static final ItemGroup PINK_GARNET_EQUIPMENT_GROUP = Registry.register(
+            Registries.ITEM_GROUP,
+            Identifier.of(BetterVanillaExperience.MOD_ID, "pink_garnet_equipment"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.CHISEL))
+                    .displayName(Text.translatable("itemgroup.bettervanillaexperience.mod_equipment"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CHISEL);
+
+                    })
+                    .build()
+    );
+
     public static void registerItemGroups(){
         BetterVanillaExperience.LOGGER.info("Registering Item Groups for " + BetterVanillaExperience.MOD_ID);
     }

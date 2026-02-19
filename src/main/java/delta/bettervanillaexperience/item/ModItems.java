@@ -1,6 +1,7 @@
 package delta.bettervanillaexperience.item;
 
 import delta.bettervanillaexperience.BetterVanillaExperience;
+import delta.bettervanillaexperience.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -11,6 +12,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
+
+    public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings(). maxDamage(32)));
 
     public static final Item RAW_ENDISITE = registerItem("raw_endisite", new Item(new Item.Settings()));
     public static final Item ENDISITE_INGOT = registerItem("endisite_ingot", new Item(new Item.Settings()));
