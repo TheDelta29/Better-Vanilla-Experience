@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "bettervanillaexperience:end_jade_block"
+    }
+  ],
+  "result": {
+    "id": "bettervanillaexperience:end_jade",
+    "count": 9
+  }
+}

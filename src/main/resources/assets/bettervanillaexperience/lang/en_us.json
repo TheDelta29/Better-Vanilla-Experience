@@ -2,6 +2,8 @@
   "item.bettervanillaexperience.pink_garnet": "Pink Garnet",
   "item.bettervanillaexperience.raw_pink_garnet": "Raw Pink Garnet",
 
+  "item.bettervanillaexperience.end_jade": "End Jade",
+
   "item.bettervanillaexperience.raw_endisite": "Raw Endisite",
   "item.bettervanillaexperience.endisite_ingot": "Endisite Ingot",
 
@@ -13,6 +15,9 @@
   "block.bettervanillaexperience.endisite_ore_block": "Endisite Ore",
   "block.bettervanillaexperience.endisite_block": "Endisite Block",
   "block.bettervanillaexperience.raw_endisite_block": "Block of Raw Endisite",
+
+  "block.bettervanillaexperience.end_jade_block": "Block of End Jade",
+  "block.bettervanillaexperience.end_jade_ore_block": "End Jade Ore",
 
   "itemgroup.bettervanillaexperience.mod_items": "Modded Items",
   "itemgroup.bettervanillaexperience.mod_blocks" : "Modded Blocks"

@@ -32,9 +32,12 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+
+
+
     public static final Block ENDISITE_ORE_BLOCK = registerBlock("endisite_ore_block",
             new ExperienceDroppingBlock(UniformIntProvider.create(4,8),
-                    AbstractBlock.Settings.create().strength(3f,3f).requiresTool()));
+                    AbstractBlock.Settings.create().strength(4f,3f).requiresTool()));
 
     public static final Block RAW_ENDISITE_BLOCK = registerBlock("raw_endisite_block",
             new Block(AbstractBlock.Settings.create().strength(3f,3f)
@@ -43,6 +46,18 @@ public class ModBlocks {
     public static final Block ENDISITE_BLOCK = registerBlock("endisite_block",
             new Block(AbstractBlock.Settings.create().strength(3f,3f)
                     .requiresTool()));
+
+
+
+    public static final Block END_JADE_ORE_BLOCK = registerBlock("end_jade_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(5,10),
+                    AbstractBlock.Settings.create().strength(4f,3f).requiresTool()));
+
+    public static final Block END_JADE_BLOCK = registerBlock("end_jade_block",
+            new Block(AbstractBlock.Settings.create().strength(4f,3f)
+                    .requiresTool()));
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
@@ -63,6 +78,8 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.ENDISITE_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RAW_ENDISITE_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.ENDISITE_ORE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.END_JADE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.END_JADE_ORE_BLOCK);
         });
     }
 

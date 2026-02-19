@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_PINK_GARNET);
                         entries.add(ModItems.ENDISITE_INGOT);
                         entries.add(ModItems.RAW_ENDISITE);
+                        entries.add(ModItems.END_JADE);
                     })
                     .build()
     );
@@ -40,6 +41,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ENDISITE_ORE_BLOCK);
                         entries.add(ModBlocks.ENDISITE_BLOCK);
                         entries.add(ModBlocks.RAW_ENDISITE_BLOCK);
+                        entries.add(ModBlocks.END_JADE_BLOCK);
+                        entries.add(ModBlocks.END_JADE_ORE_BLOCK);
 
                     })
                     .build()
