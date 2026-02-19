@@ -1,6 +1,7 @@
 package delta.bettervanillaexperience.block;
 
 import delta.bettervanillaexperience.BetterVanillaExperience;
+import delta.bettervanillaexperience.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -57,7 +58,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f,3f)
                     .requiresTool()));
 
-
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1).requiresTool()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);

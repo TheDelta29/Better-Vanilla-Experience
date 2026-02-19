@@ -2,12 +2,18 @@ package delta.bettervanillaexperience.item;
 
 import delta.bettervanillaexperience.BetterVanillaExperience;
 import delta.bettervanillaexperience.item.custom.ChiselItem;
+import delta.bettervanillaexperience.item.custom.DrinkItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
+import java.util.List;
 
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
@@ -19,6 +25,17 @@ public class ModItems {
     public static final Item ENDISITE_INGOT = registerItem("endisite_ingot", new Item(new Item.Settings()));
 
     public static final Item END_JADE = registerItem("end_jade", new Item(new Item.Settings()));
+
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.bettervanillaexperience.cauliflower.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+    public static final Item SODA = registerItem("soda", new DrinkItem(new Item.Settings().food(ModFoodComponents.SODA)));
+
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BetterVanillaExperience.MOD_ID, name), item);

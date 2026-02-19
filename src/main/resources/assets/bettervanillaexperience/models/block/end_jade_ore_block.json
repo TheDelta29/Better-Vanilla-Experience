@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "bettervanillaexperience:block/end_jade_ore_block"
-  }
-}
