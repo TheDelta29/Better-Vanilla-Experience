@@ -1,6 +1,7 @@
 package delta.bettervanillaexperience.datagen;
 
 import delta.bettervanillaexperience.block.ModBlocks;
+import delta.bettervanillaexperience.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -41,7 +42,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ENDISITE_ORE_BLOCK)
 
                 .add(ModBlocks.END_JADE_BLOCK)
-                .add(ModBlocks.ENDISITE_ORE_BLOCK);
+                .add(ModBlocks.END_JADE_ORE_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.PINK_GARNET_FENCE);
@@ -51,6 +52,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.PINK_GARNET_WALL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
 
 
 

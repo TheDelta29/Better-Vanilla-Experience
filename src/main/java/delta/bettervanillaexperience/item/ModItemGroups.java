@@ -51,6 +51,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
+                        entries.add(ModBlocks.PINK_GARNET_LAMP);
+
                         entries.add(ModBlocks.ENDISITE_ORE_BLOCK);
                         entries.add(ModBlocks.ENDISITE_BLOCK);
                         entries.add(ModBlocks.RAW_ENDISITE_BLOCK);
@@ -65,10 +67,16 @@ public class ModItemGroups {
             Registries.ITEM_GROUP,
             Identifier.of(BetterVanillaExperience.MOD_ID, "bve_equipment"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.CHISEL))
+                    .icon(() -> new ItemStack(ModItems.PINK_GARNET_SWORD))
                     .displayName(Text.translatable("itemgroup.bettervanillaexperience.mod_equipment"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CHISEL);
+
+                        entries.add(ModItems.PINK_GARNET_SWORD);
+                        entries.add(ModItems.PINK_GARNET_PICKAXE);
+                        entries.add(ModItems.PINK_GARNET_AXE);
+                        entries.add(ModItems.PINK_GARNET_SHOVEL);
+                        entries.add(ModItems.PINK_GARNET_HOE);
                     })
                     .build()
     );

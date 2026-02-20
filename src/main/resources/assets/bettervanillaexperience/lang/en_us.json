@@ -2,6 +2,12 @@
   "item.bettervanillaexperience.pink_garnet": "Pink Garnet",
   "item.bettervanillaexperience.raw_pink_garnet": "Raw Pink Garnet",
 
+  "item.bettervanillaexperience.pink_garnet_sword": "Pink Garnet Sword",
+  "item.bettervanillaexperience.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.bettervanillaexperience.pink_garnet_axe": "Pink Garnet Axe",
+  "item.bettervanillaexperience.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.bettervanillaexperience.pink_garnet_hoe": "Pink Garnet Hoe",
+
   "item.bettervanillaexperience.end_jade": "End Jade",
 
   "item.bettervanillaexperience.raw_endisite": "Raw Endisite",
@@ -36,6 +42,8 @@
 
   "block.bettervanillaexperience.pink_garnet_door": "Pink Garnet Door",
   "block.bettervanillaexperience.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
+  "block.bettervanillaexperience.pink_garnet_lamp": "Pink Garnet Lamp",
 
   "block.bettervanillaexperience.endisite_ore_block": "Endisite Ore",
   "block.bettervanillaexperience.endisite_block": "Endisite Block",

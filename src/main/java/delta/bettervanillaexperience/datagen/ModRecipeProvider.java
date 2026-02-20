@@ -7,6 +7,7 @@ import net.minecraft.data.DataOutput;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -78,6 +79,55 @@ public class ModRecipeProvider extends RecipeProvider {
         createTrapdoorRecipe(ModBlocks.PINK_GARNET_TRAPDOOR, Ingredient.ofItems(ModItems.PINK_GARNET))
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(exporter);
+
+        // Pink Garnet Tools Crafting Recipes
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PINK_GARNET_SWORD)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE)
+                .pattern(" RR")
+                .pattern(" SR")
+                .pattern(" S ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL)
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE)
+                .pattern(" RR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+
 
 
         // Endisite Crafting Recipes

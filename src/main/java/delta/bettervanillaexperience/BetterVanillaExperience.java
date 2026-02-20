@@ -1,6 +1,7 @@
 package delta.bettervanillaexperience;
 
 import delta.bettervanillaexperience.block.ModBlocks;
+import delta.bettervanillaexperience.component.ModDataComponentTypes;
 import delta.bettervanillaexperience.item.ModItemGroups;
 import delta.bettervanillaexperience.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,8 @@ public class BetterVanillaExperience implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 18000);
 	}
