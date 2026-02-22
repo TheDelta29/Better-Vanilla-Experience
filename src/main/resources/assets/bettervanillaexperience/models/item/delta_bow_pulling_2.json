@@ -1,0 +1,6 @@
+{
+  "parent": "bettervanillaexperience:item/delta_bow",
+  "textures": {
+    "layer0": "bettervanillaexperience:item/delta_bow_pulling_2"
+  }
+}

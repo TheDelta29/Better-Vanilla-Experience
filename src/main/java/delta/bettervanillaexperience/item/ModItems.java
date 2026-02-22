@@ -33,7 +33,7 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
-    public static final Item SODA = registerItem("soda", new DrinkItem(new Item.Settings().food(ModFoodComponents.SODA)));
+    //public static final Item SODA = registerItem("soda", new DrinkItem(new Item.Settings().food(ModFoodComponents.SODA))); <- Way to implement a drinking item instead of an eating one
 
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
@@ -57,6 +57,9 @@ public class ModItems {
     public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
             new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
+
+    public static final Item DELTA_BOW = registerItem("delta_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
 
     // Armor
 

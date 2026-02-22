@@ -70,11 +70,15 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.PINK_GARNET_SWORD))
                     .displayName(Text.translatable("itemgroup.bettervanillaexperience.mod_equipment"))
                     .entries((displayContext, entries) -> {
+
+                        // Pink Garnet
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
                         entries.add(ModItems.PINK_GARNET_AXE);
                         entries.add(ModItems.PINK_GARNET_SHOVEL);
                         entries.add(ModItems.PINK_GARNET_HOE);
+
+                        entries.add(ModItems.DELTA_BOW);
 
                         entries.add(ModItems.PINK_GARNET_HAMMER);
 
@@ -98,7 +102,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.bettervanillaexperience.mod_consumables"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.SODA);
+                        //entries.add(ModItems.SODA);
                     })
                     .build()
     );
